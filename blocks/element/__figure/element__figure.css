@@ -1,0 +1,5 @@
+.element__figure {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
