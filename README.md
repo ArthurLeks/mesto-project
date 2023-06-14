@@ -20,5 +20,5 @@
   - Adaptive UI;
   - Media Queries;
 Ссылка на сайт:
-https://arthurleks.github.io/mesto-project/
+
 
