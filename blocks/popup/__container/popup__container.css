@@ -1,5 +1,5 @@
 .popup__container {
-  width: calc((100vw - 320px) / (1280 - 320) * (430 - 282) + 282px);
+  max-width: calc((100vw - 320px) / (1280 - 320) * (430 - 282) + 282px);
   padding: calc((100vw - 320px) / (1280 - 320) * (34 - 25) + 25px) calc((100vw - 320px) / (1280 - 320) * (36 - 22) + 22px) calc((100vw - 320px) / (1280 - 320) * (37 - 25) + 25px);
   border-radius: 10px;
   background-color: #fff;
@@ -11,6 +11,6 @@
 @media screen and (min-width: 1280px) {
   .popup__container {
     padding: 34px 36px 37px;
-    width: 430px;
+    max-width: 430px;
   }
 }

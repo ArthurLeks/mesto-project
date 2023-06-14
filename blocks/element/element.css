@@ -1,5 +1,5 @@
 .element {
-  width: 282px;
+  max-width: 282px;
   margin: 0 auto;
   background: linear-gradient(to top, #ccc 0%, #f6f6f6 75%, #fff 100%);
   overflow: hidden;
