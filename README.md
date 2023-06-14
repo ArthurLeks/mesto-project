@@ -19,6 +19,7 @@
   - Positioning;
   - Adaptive UI;
   - Media Queries;
-Ссылка на сайт:
+## Ссылка на сайт:
+- https://arthurleks.github.io/mesto-project/
 
 
