@@ -18,6 +18,7 @@ const cardsElement = document.querySelector('.elements__list');
 const cardTemplate = document.querySelector('#card-template').content;
 
 const popupPhotos = document.querySelector('.popup_photos');
+const popupPhotosImage = document.querySelector('.popup__image');
 const closePopupPhotos = popupPhotos.querySelector('.popup__button-close');
 
 function openPopup(popupElement) {
@@ -64,8 +65,6 @@ function handleSubmitCard(evt) {
 }
 
 function openPopupPhotos(evt) {
-  const popupPhotosImage = document.querySelector('.popup__image');
-
   popupPhotosImage.src = evt.target.src;
   popupPhotosImage.alt = evt.target.alt;
   popupPhotos.querySelector('.popup__description').textContent = evt.target.alt;
