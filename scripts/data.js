@@ -24,3 +24,10 @@ const initialCards = [
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
     }
   ];
+  const classData = {
+    inputSelector: 'popup__input',
+    buttonSubmitClass: 'popup__button-save',
+    disableButtonClass: 'popup__button-save_disabled',
+    inputErrorClass: 'popup__input_type_error',
+    activeErrorClass: 'popup__input-error_visible'
+  };
