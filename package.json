@@ -1,0 +1,14 @@
+{
+  "name": "yandex_praktikum",
+  "version": "0.0.1",
+  "description": "Место - это интерактивная страница, на которой пользователи могут делиться фотографиями, удалять их и ставить лайки.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksanyan Arthur",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.0"
+  }
+}
