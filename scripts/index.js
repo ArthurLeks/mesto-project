@@ -121,4 +121,3 @@ popupEditForm.addEventListener('submit', handleSubmitProfile);
 addCardButton.addEventListener('click', () => openPopup(popupAdd));
 
 popupAddForm.addEventListener('submit', handleSubmitCard);
-
