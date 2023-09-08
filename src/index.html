@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mesto</title>
-        <link rel="icon" type="image/svg" href="<%=require('./images/fav.svg')%>" />
-    </head>
-    <body class="page">
-        <div class="page__container">
-            <header class="header">
-                <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="Логотип Mesto"/>
-            </header>
-            <main class="content">
-                <section class="profile">
-                    <img class="profile__avatar" src="<%=require('./images/avatar.png')%>" alt="Аватар профиля" />
-                    <div class="profile__info">
-                        <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button class="profile__button-edit" type="button" title="Редактировать профиль"></button>
-                        <p class="profile__about">Исследователь океана</p>
-                    </div>
-                    <button class="profile__button-add" type="button" title="Обновить фотографию"></button>
-                </section>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mesto</title>
+    <link rel="icon" type="image/svg" href="<%=require('./images/fav.svg')%>" /> 
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="Логотип Mesto"/> 
+      </header>
+      <main class="content">
+        <section class="profile">
+          <img class="profile__avatar" src="<%=require('./images/avatar.png')%>" alt="Аватар профиля" /> 
+          <div class="profile__info">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__button-edit" type="button" title="Редактировать профиль"></button>
+            <p class="profile__about">Исследователь океана</p>
+          </div>
+          <button class="profile__button-add" type="button" title="Обновить фотографию"></button>
+        </section>
 
         <section class="elements">
           <ul class="elements__list"></ul>
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__author">&copy; 2021. Mesto Russia</p>
+        <p class="footer__author">&copy; 2023. Mesto Russia</p>
       </footer>
     </div>
     <div class="popup popup_edit">
@@ -36,10 +36,10 @@
         <form class="popup__form" name="profileData" novalidate>
           <h2 class="popup__title">Редактировать профиль</h2>
           <fieldset class="popup__fieldset">
-            <input class="popup__input" id="name" type="text" name="title" placeholder="Имя" minlength="2" maxlength="40" required>
-            <span class="popup__input-error name-error"></span>
-            <input class="popup__input" id="description" type="text" name="subtitle" placeholder="О себе" minlength="2" maxlength="200" required>
-            <span class="popup__input-error description-error"></span>
+            <input class="popup__input" id="profile-name" type="text" name="profileName" placeholder="Имя" minlength="2" maxlength="40" required>
+            <span class="popup__input-error profile-name-error"></span>
+            <input class="popup__input" id="profile-about" type="text" name="profileAbout" placeholder="О себе" minlength="2" maxlength="200" required>
+            <span class="popup__input-error profile-about-error"></span>
           </fieldset>
           <button class="popup__button-save" type="submit" title="Сохранить">Сохранить</button>
         </form>
@@ -51,9 +51,9 @@
         <form class="popup__form" name="placeData" novalidate>
           <h2 class="popup__title">Новое место</h2>
           <fieldset class="popup__fieldset">
-            <input class="popup__input" id="place-name" type="text" name="name" placeholder="Название" minlength="2" maxlength="30" required>
+            <input class="popup__input" id="place-name" type="text" name="placeName" placeholder="Название" minlength="2" maxlength="30" required>
             <span class="popup__input-error place-name-error"></span>
-            <input class="popup__input" id="place-link" type="url" name="url" placeholder="Ссылка на картинку" required>
+            <input class="popup__input" id="place-link" type="url" name="placeLink" placeholder="Ссылка на картинку" required>
             <span class="popup__input-error place-link-error"></span>
           </fieldset>
           <button class="popup__button-save" type="submit" title="Создать">Создать</button>
@@ -78,5 +78,6 @@
         </figcaption>
       </figure>
     </template>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
